@@ -68,6 +68,8 @@
     <Exec Command="xcopy /y /i $(SolutionDir)\SmartUtils\bin\Release\SmartUtils.dll $(SolutionDir)\NuGetPkg\lib\"></Exec>
     <WebDownload Condition="!Exists('nuget.exe')" Filename="nuget.exe" FileUri="https://dist.nuget.org/win-x86-commandline/latest/nuget.exe" />
     <Exec Command="nuget pack $(SolutionDir)\NuGetPkg\Package.nuspec -Prop Configuration=Release"></Exec>
+    <Exec Command="move /y $(SolutionDir)\SmartUtils\*.nupkg $(SolutionDir)\NuGetPkg\"></Exec>
+    <!--<MV SourceFiles="$(SolutionDir)\SmartUtils\SmartUtils.0.0.1.nupkg" DestinationFolder="$(SolutionDir)\NuGetPkg\" />-->
   </Target>
   
 </Project>
