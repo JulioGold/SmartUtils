@@ -27,6 +27,23 @@ namespace Run
 
             #endregion
 
+            #region StringHelper.SplitCharByChar
+
+            Console.WriteLine("<!------- StringHelper.SplitCharByChar -------");
+
+            string nome = "SmartUtils";
+
+            string[] letras = nome.SplitCharByChar();
+
+            foreach (var item in letras)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("<!------- StringHelper.SplitCharByChar -------");
+
+            #endregion
+
             Console.ReadKey();
         }
     }

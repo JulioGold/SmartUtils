@@ -39,10 +39,40 @@ aaa
 ```
 ---
   
+### StringHelper.SplitCharByChar  
+
+Split a string char by char.   
+  
+```
+string nome = "SmartUtils";
+
+string[] letras = nome.SplitCharByChar();
+
+foreach (var item in letras)
+{
+    Console.WriteLine(item);
+}
+```  
+Result will be:
+```
+S
+m
+a
+r
+t
+U
+t
+i
+l
+s
+```
+---
+  
 ### News  
     
 - 0.0.1 Created the project, added *IntHelper.NTimes* helper method.
-- 0.0.2 Created the project, added *StringHelper.NTimes* helper method.  
+- 0.0.2 Added *StringHelper.NTimes* helper method.  
+- 0.0.3 Added *StringHelper.SplitCharByChar* helper method.  
   
 Danke  
   
