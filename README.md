@@ -11,6 +11,8 @@ Methods
   
 - [IntHelper.NTimes](#inthelperntimes)  
 - [StringHelper.NTimes](#stringhelperntimes)  
+- [DirectoryHelper.GetDirectories](#directoryhelpergetdirectories)  
+- [StringHelper.SplitCharByChar](#stringhelper.splitcharbychar)  
   
 ---  
 ### IntHelper.NTimes  
@@ -68,11 +70,33 @@ s
 ```
 ---
   
+### DirectoryHelper.GetDirectories  
+  
+Allow to pass multi search patterns to search at directories.  
+  
+```
+string[] directories = DirectoryHelper.GetDirectories(@"C:\temp", "*packages*|*node_modules*|*bin*|*obj*", SearchOption.AllDirectories);
+
+foreach (var directory in directories)
+{
+    Console.WriteLine(directory);
+}
+```  
+Result will be:
+```
+C:\temp\packages
+C:\temp\node_modules
+C:\temp\bin
+C:\temp\obj
+```
+---
+  
 ### News  
     
 - 0.0.1 Created the project, added *IntHelper.NTimes* helper method.
 - 0.0.2 Added *StringHelper.NTimes* helper method.  
 - 0.0.3 Added *StringHelper.SplitCharByChar* helper method.  
+- 0.0.4 Added *DirectoryHelper.GetDirectories* helper method.  
   
 Danke  
   

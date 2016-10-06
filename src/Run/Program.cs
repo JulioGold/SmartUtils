@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SmartUtils;
+using System.IO;
 
 namespace Run
 {
@@ -40,7 +41,22 @@ namespace Run
                 Console.WriteLine(item);
             }
 
-            Console.WriteLine("<!------- StringHelper.SplitCharByChar -------");
+            Console.WriteLine("------- StringHelper.SplitCharByChar ------->");
+
+            #endregion
+
+            #region DirectoryHelper.GetDirectories
+
+            Console.WriteLine("<!------- DirectoryHelper.GetDirectories -------");
+
+            string[] directories = DirectoryHelper.GetDirectories(@"C:\temp", "*packages*|*node_modules*|*bin*|*obj*", SearchOption.AllDirectories);
+
+            foreach (var directory in directories)
+            {
+                Console.WriteLine(directory);
+            }
+
+            Console.WriteLine("------- DirectoryHelper.GetDirectories ------->");
 
             #endregion
 
