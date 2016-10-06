@@ -4,13 +4,13 @@
     <id>SmartUtils</id>
     <title>SmartUtils</title>
     <description>Utils things to use with .NET.</description>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <authors>JulioGold</authors>
     <owners>JulioGold</owners>
     <licenseUrl>https://raw.githubusercontent.com/JulioGold/SmartUtils/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/JulioGold/SmartUtils</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>Project created.</releaseNotes>
+    <!--<releaseNotes>Project created.</releaseNotes>-->
     <copyright>Copyright 2016</copyright>
     <tags>Utils things to use with .NET.</tags>
     <!--<dependencies>

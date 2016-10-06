@@ -19,6 +19,14 @@ namespace Run
 
             #endregion
 
+            #region StringHelper.NTimes
+
+            Console.WriteLine("<!------- StringHelper.NTimes -------");
+            Console.WriteLine("a".NTimes(3));
+            Console.WriteLine("------- StringHelper.NTimes ------->");
+
+            #endregion
+
             Console.ReadKey();
         }
     }
