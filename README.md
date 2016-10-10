@@ -11,8 +11,9 @@ Methods
   
 - [IntHelper.NTimes](#inthelperntimes)  
 - [StringHelper.NTimes](#stringhelperntimes)  
-- [DirectoryHelper.GetDirectories](#directoryhelpergetdirectories)  
 - [StringHelper.SplitCharByChar](#stringhelper.splitcharbychar)  
+- [DirectoryHelper.GetDirectories](#directoryhelpergetdirectories)  
+- [StringHelper.GetHash](#stringhelper.gethash)  
   
 ---  
 ### IntHelper.NTimes  
@@ -90,6 +91,18 @@ C:\temp\bin
 C:\temp\obj
 ```
 ---
+### StringHelper.GetHash  
+
+Split a string char by char.   
+  
+```
+Console.WriteLine("SmartUtils".GetHash());
+```  
+Result will be:
+```
+vt/cEBO9y0rflBFpaZWaq+ziDRuIU2ndqYJc1MehbWM=
+```
+---
   
 ### News  
     
@@ -97,6 +110,7 @@ C:\temp\obj
 - 0.0.2 Added *StringHelper.NTimes* helper method.  
 - 0.0.3 Added *StringHelper.SplitCharByChar* helper method.  
 - 0.0.4 Added *DirectoryHelper.GetDirectories* helper method.  
+- 0.0.5 Added *StringHelper.GetHash* helper method.  
   
 Danke  
   

@@ -60,6 +60,14 @@ namespace Run
 
             #endregion
 
+            #region StringHelper.GetHash
+
+            Console.WriteLine("<!------- StringHelper.GetHash -------");
+            Console.WriteLine("SmartUtils".GetHash());
+            Console.WriteLine("------- StringHelper.GetHash ------->");
+
+            #endregion
+
             Console.ReadKey();
         }
     }
