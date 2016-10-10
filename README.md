@@ -15,6 +15,7 @@ Methods
 - [DirectoryHelper.GetDirectories](#directoryhelpergetdirectories)  
 - [StringHelper.GetHash](#stringhelper.gethash)  
 - [StringHelper.NormalizeWhitespace](#stringhelper.normalizewhitespace)  
+- [StringHelper.Numbers](#stringhelper.numbers)  
   
 ---  
 ### IntHelper.NTimes  
@@ -116,6 +117,18 @@ Result will be:
  SmartUtils is a cool thing!
 ```
 ---
+### StringHelper.Numbers  
+
+Get just the numbers.  
+  
+```
+Console.WriteLine("Smart4Utils2".Numbers());
+```  
+Result will be:
+```
+ 42
+```
+---
   
 ### News  
     
@@ -125,6 +138,7 @@ Result will be:
 - 0.0.4 Added *DirectoryHelper.GetDirectories* helper method.  
 - 0.0.5 Added *StringHelper.GetHash* helper method.  
 - 0.0.6 Added *StringHelper.NormalizeWhitespace* helper method.  
+- 0.0.7 Added *StringHelper.Numbers* helper method.  
   
 Danke  
   

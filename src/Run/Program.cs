@@ -86,7 +86,17 @@ namespace Run
             Console.WriteLine("        SmartUtils    is     a cool        thing!".NormalizeWhitespace());
             Console.WriteLine("   is     a cool        thing  is    a       SmartUtils".NormalizeWhitespace());
             Console.WriteLine("------- StringHelper.NormalizeWhitespace ------->");
-            
+
+            #endregion
+
+            #region StringHelper.Numbers
+
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.WriteLine("<!------- StringHelper.Numbers -------");
+            Console.WriteLine("Smart4Utils2".Numbers());
+            Console.WriteLine("------- StringHelper.Numbers ------->");
+
             #endregion
 
             Console.ReadKey();

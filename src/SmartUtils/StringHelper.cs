@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
+using System.Text.RegularExpressions;
 
 namespace SmartUtils
 {
@@ -49,7 +50,17 @@ namespace SmartUtils
         /// <returns>Texto com espaçamento normalizado em apenas um espaço.</returns>
         public static string NormalizeWhitespace(this string inputText)
         {
-            return System.Text.RegularExpressions.Regex.Replace(inputText, @"\s{2,}", " ");
+            return Regex.Replace(inputText, @"\s{2,}", " ");
+        }
+
+        /// <summary>
+        /// Retira caracteres diversos, deixando apenas números.
+        /// </summary>
+        /// <param name="texto">String qualquer.</param>
+        /// <returns>Retorna o número contido na string passada. A sequência é definida conforme a sequência da string passada.</returns>
+        public static string Numbers(this string inputText)
+        {
+            return String.Join(null, Regex.Split(inputText, "[^\\d]"));
         }
     }
 }
