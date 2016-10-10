@@ -17,6 +17,7 @@ Methods
 - [StringHelper.NormalizeWhitespace](#stringhelper.normalizewhitespace)  
 - [StringHelper.Numbers](#stringhelper.numbers)  
 - [StringHelper.Join](#stringhelper.join)  
+- [StringHelper.JoinWithoutNullOrEmpty](#stringhelper.joinwithoutnullorempty)  
   
 ---  
 ### IntHelper.NTimes  
@@ -142,6 +143,18 @@ Result will be:
 Smart, Utils
 ```
 ---
+### StringHelper.JoinWithoutNullOrEmpty  
+
+Join a list without null or empty objects.  
+  
+```
+Console.WriteLine(StringHelper.JoinWithoutNullOrEmpty(", ", new string[] { "Smart", "Utils", "   ", "" }));
+```  
+Result will be:
+```
+Smart, Utils,
+```
+---
   
 ### News  
     
@@ -152,7 +165,8 @@ Smart, Utils
 - 0.0.5 Added *StringHelper.GetHash* helper method.  
 - 0.0.6 Added *StringHelper.NormalizeWhitespace* helper method.  
 - 0.0.7 Added *StringHelper.Numbers* helper method.  
-- 0.0.8 Added *StringHelper.Join* helper method.  
+- 0.0.8 Added *StringHelper.Join* helper method.
+- 0.0.9 Added *StringHelper.JoinWithoutNullOrEmpty* helper method.    
   
 Danke  
   

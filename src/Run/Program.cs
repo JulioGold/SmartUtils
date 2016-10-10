@@ -111,6 +111,18 @@ namespace Run
 
             #endregion
 
+            #region StringHelper.JoinWithoutNullOrEmpty
+
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.WriteLine("<!------- StringHelper.JoinWithoutNullOrEmpty -------");
+
+            Console.WriteLine(StringHelper.JoinWithoutNullOrEmpty(", ", new string[] { "Smart", "Utils", "   ", "" }));
+
+            Console.WriteLine("------- StringHelper.JoinWithoutNullOrEmpty ------->");
+
+            #endregion
+
             Console.ReadKey();
         }
     }
