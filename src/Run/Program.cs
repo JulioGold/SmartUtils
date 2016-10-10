@@ -123,6 +123,18 @@ namespace Run
 
             #endregion
 
+            #region StringHelper.JoinWithoutNullOrEmptyOrWhiteSpace
+
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.WriteLine("<!------- StringHelper.JoinWithoutNullOrEmptyOrWhiteSpace -------");
+
+            Console.WriteLine(StringHelper.JoinWithoutNullOrEmptyOrWhiteSpace(", ", new string[] { "Smart", "Utils", "   ", "" }));
+
+            Console.WriteLine("------- StringHelper.JoinWithoutNullOrEmptyOrWhiteSpace ------->");
+
+            #endregion
+
             Console.ReadKey();
         }
     }

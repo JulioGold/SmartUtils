@@ -60,5 +60,6 @@ namespace SmartUtils
         public static string Join(string separator, Func<string, bool> predicate, String[] value, int startIndex, int count) => String.Join(separator, value.Where(predicate), startIndex, count);
         public static string Join<T>(string separator, Func<T, bool> predicate, IEnumerable<T> values) => String.Join(separator, values.Where(predicate));
         public static string JoinWithoutNullOrEmpty(string separator, params string[] values) => String.Join(separator, values.Where(item => !String.IsNullOrEmpty(item)));
+        public static string JoinWithoutNullOrEmptyOrWhiteSpace(string separator, params string[] values) => String.Join(separator, values.Where(item => !String.IsNullOrEmpty(item) && !String.IsNullOrWhiteSpace(item)));
     }
 }
