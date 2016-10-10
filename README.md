@@ -16,6 +16,7 @@ Methods
 - [StringHelper.GetHash](#stringhelper.gethash)  
 - [StringHelper.NormalizeWhitespace](#stringhelper.normalizewhitespace)  
 - [StringHelper.Numbers](#stringhelper.numbers)  
+- [StringHelper.Join](#stringhelper.join)  
   
 ---  
 ### IntHelper.NTimes  
@@ -129,6 +130,18 @@ Result will be:
  42
 ```
 ---
+### StringHelper.Join  
+
+Join a list with a predicate condition.  
+  
+```
+Console.WriteLine(StringHelper.Join(", ", ((Func<string, bool>)((word) => !String.IsNullOrEmpty(word) && !String.IsNullOrWhiteSpace(word))) , new string[] { "Smart", "Utils", "   ", "" }));
+```  
+Result will be:
+```
+Smart, Utils
+```
+---
   
 ### News  
     
@@ -139,6 +152,7 @@ Result will be:
 - 0.0.5 Added *StringHelper.GetHash* helper method.  
 - 0.0.6 Added *StringHelper.NormalizeWhitespace* helper method.  
 - 0.0.7 Added *StringHelper.Numbers* helper method.  
+- 0.0.8 Added *StringHelper.Join* helper method.  
   
 Danke  
   

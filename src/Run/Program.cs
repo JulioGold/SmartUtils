@@ -99,6 +99,18 @@ namespace Run
 
             #endregion
 
+            #region StringHelper.Join
+
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.WriteLine("<!------- StringHelper.Join -------");
+
+            Console.WriteLine(StringHelper.Join(", ", ((Func<string, bool>)((word) => !String.IsNullOrEmpty(word) && !String.IsNullOrWhiteSpace(word))) , new string[] { "Smart", "Utils", "   ", "" }));
+
+            Console.WriteLine("------- StringHelper.Join ------->");
+
+            #endregion
+
             Console.ReadKey();
         }
     }
