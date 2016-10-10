@@ -40,5 +40,16 @@ namespace SmartUtils
                 return Convert.ToBase64String(byteHash);
             }
         }
+
+        /// <summary>
+        /// Normaliza espaçamento, deixando sempre apenas um espaço entre as palavras, ou seja, os espaços adicionais são retirados.
+        /// Esse comportamento é válido para o início e para o final do texto também.
+        /// </summary>
+        /// <param name="inputText">Texto à ser normalizado.</param>
+        /// <returns>Texto com espaçamento normalizado em apenas um espaço.</returns>
+        public static string NormalizeWhitespace(this string inputText)
+        {
+            return System.Text.RegularExpressions.Regex.Replace(inputText, @"\s{2,}", " ");
+        }
     }
 }

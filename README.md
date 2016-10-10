@@ -14,6 +14,7 @@ Methods
 - [StringHelper.SplitCharByChar](#stringhelper.splitcharbychar)  
 - [DirectoryHelper.GetDirectories](#directoryhelpergetdirectories)  
 - [StringHelper.GetHash](#stringhelper.gethash)  
+- [StringHelper.NormalizeWhitespace](#stringhelper.normalizewhitespace)  
   
 ---  
 ### IntHelper.NTimes  
@@ -93,7 +94,7 @@ C:\temp\obj
 ---
 ### StringHelper.GetHash  
 
-Split a string char by char.   
+Get a hash of an string.   
   
 ```
 Console.WriteLine("SmartUtils".GetHash());
@@ -101,6 +102,18 @@ Console.WriteLine("SmartUtils".GetHash());
 Result will be:
 ```
 vt/cEBO9y0rflBFpaZWaq+ziDRuIU2ndqYJc1MehbWM=
+```
+---
+### StringHelper.NormalizeWhitespace  
+
+Normalize an text with just one whitespace.  
+  
+```
+Console.WriteLine("        SmartUtils    is     a cool        thing!".NormalizeWhitespace());
+```  
+Result will be:
+```
+ SmartUtils is a cool thing!
 ```
 ---
   
@@ -111,6 +124,7 @@ vt/cEBO9y0rflBFpaZWaq+ziDRuIU2ndqYJc1MehbWM=
 - 0.0.3 Added *StringHelper.SplitCharByChar* helper method.  
 - 0.0.4 Added *DirectoryHelper.GetDirectories* helper method.  
 - 0.0.5 Added *StringHelper.GetHash* helper method.  
+- 0.0.6 Added *StringHelper.NormalizeWhitespace* helper method.  
   
 Danke  
   

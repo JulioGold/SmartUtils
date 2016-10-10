@@ -14,6 +14,8 @@ namespace Run
         {
             #region IntHelper.NTimes
 
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
             Console.WriteLine("<!------- IntHelper.NTimes -------");
             Console.WriteLine(1.NTimes(3));
             Console.WriteLine("------- IntHelper.NTimes ------->");
@@ -22,6 +24,8 @@ namespace Run
 
             #region StringHelper.NTimes
 
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
             Console.WriteLine("<!------- StringHelper.NTimes -------");
             Console.WriteLine("a".NTimes(3));
             Console.WriteLine("------- StringHelper.NTimes ------->");
@@ -30,6 +34,8 @@ namespace Run
 
             #region StringHelper.SplitCharByChar
 
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
             Console.WriteLine("<!------- StringHelper.SplitCharByChar -------");
 
             string nome = "SmartUtils";
@@ -47,6 +53,8 @@ namespace Run
 
             #region DirectoryHelper.GetDirectories
 
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
             Console.WriteLine("<!------- DirectoryHelper.GetDirectories -------");
 
             string[] directories = DirectoryHelper.GetDirectories(@"C:\temp", "*packages*|*node_modules*|*bin*|*obj*", SearchOption.AllDirectories);
@@ -62,10 +70,23 @@ namespace Run
 
             #region StringHelper.GetHash
 
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
             Console.WriteLine("<!------- StringHelper.GetHash -------");
             Console.WriteLine("SmartUtils".GetHash());
             Console.WriteLine("------- StringHelper.GetHash ------->");
 
+            #endregion
+
+            #region StringHelper.NormalizeWhitespace
+
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.WriteLine("<!------- StringHelper.NormalizeWhitespace -------");
+            Console.WriteLine("        SmartUtils    is     a cool        thing!".NormalizeWhitespace());
+            Console.WriteLine("   is     a cool        thing  is    a       SmartUtils".NormalizeWhitespace());
+            Console.WriteLine("------- StringHelper.NormalizeWhitespace ------->");
+            
             #endregion
 
             Console.ReadKey();
