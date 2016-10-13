@@ -135,6 +135,18 @@ namespace Run
 
             #endregion
 
+            #region StringHelper.RemoveAccents
+
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.WriteLine("<!------- StringHelper.RemoveAccents -------");
+
+            Console.WriteLine("áéíóú,àèìòù,äëïöü,âêîôû,ÁÉÍÓÚ,ÀÈÌÒÙ,ÄËÏÖÜ,ÂÊÎÔÛ".RemoveAccents());
+
+            Console.WriteLine("------- StringHelper.RemoveAccents ------->");
+
+            #endregion
+
             Console.ReadKey();
         }
     }

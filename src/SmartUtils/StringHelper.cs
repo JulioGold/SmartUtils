@@ -61,5 +61,17 @@ namespace SmartUtils
         public static string Join<T>(string separator, Func<T, bool> predicate, IEnumerable<T> values) => String.Join(separator, values.Where(predicate));
         public static string JoinWithoutNullOrEmpty(string separator, params string[] values) => String.Join(separator, values.Where(item => !String.IsNullOrEmpty(item)));
         public static string JoinWithoutNullOrEmptyOrWhiteSpace(string separator, params string[] values) => String.Join(separator, values.Where(item => !String.IsNullOrEmpty(item) && !String.IsNullOrWhiteSpace(item)));
+
+        public static string RemoveAccents(this string inputString)
+        {
+            inputString = new Regex("[á|à|ä|â|Á|À|Ä|Â]", RegexOptions.Compiled).Replace(inputString, "a");
+            inputString = new Regex("[é|è|ë|ê|É|È|Ë|Ê]", RegexOptions.Compiled).Replace(inputString, "e");
+            inputString = new Regex("[í|ì|ï|î|Í|Ì|Ï|Î]", RegexOptions.Compiled).Replace(inputString, "i");
+            inputString = new Regex("[ó|ò|ö|ô|Ó|Ò|Ö|Ô]", RegexOptions.Compiled).Replace(inputString, "o");
+            inputString = new Regex("[ú|ù|ü|û|Ú|Ù|Ü|Û]", RegexOptions.Compiled).Replace(inputString, "u");
+            inputString = new Regex("[´|']", RegexOptions.Compiled).Replace(inputString, " ");
+
+            return inputString;
+        }
     }
 }

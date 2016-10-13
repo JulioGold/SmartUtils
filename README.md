@@ -11,14 +11,15 @@ Methods
   
 - [IntHelper.NTimes](#inthelperntimes)  
 - [StringHelper.NTimes](#stringhelperntimes)  
-- [StringHelper.SplitCharByChar](#stringhelper.splitcharbychar)  
+- [StringHelper.SplitCharByChar](#stringhelpersplitcharbychar)  
 - [DirectoryHelper.GetDirectories](#directoryhelpergetdirectories)  
-- [StringHelper.GetHash](#stringhelper.gethash)  
-- [StringHelper.NormalizeWhitespace](#stringhelper.normalizewhitespace)  
-- [StringHelper.Numbers](#stringhelper.numbers)  
-- [StringHelper.Join](#stringhelper.join)  
-- [StringHelper.JoinWithoutNullOrEmpty](#stringhelper.joinwithoutnullorempty)  
-- [StringHelper.JoinWithoutNullOrEmptyOrWhiteSpace](#stringhelper.joinwithoutnulloremptyorwhitespace)  
+- [StringHelper.GetHash](#stringhelpergethash)  
+- [StringHelper.NormalizeWhitespace](#stringhelpernormalizewhitespace)  
+- [StringHelper.Numbers](#stringhelpernumbers)  
+- [StringHelper.Join](#stringhelperjoin)  
+- [StringHelper.JoinWithoutNullOrEmpty](#stringhelperjoinwithoutnullorempty)  
+- [StringHelper.JoinWithoutNullOrEmptyOrWhiteSpace](#stringhelperjoinwithoutnulloremptyorwhitespace)  
+- [StringHelper.RemoveAccents](#stringhelperremoveaccents)  
   
 ---  
 ### IntHelper.NTimes  
@@ -168,6 +169,18 @@ Result will be:
 Smart, Utils
 ```
 ---
+### StringHelper.RemoveAccents  
+
+Remove accentuation of an text.  
+  
+```
+Console.WriteLine("áéíóú,àèìòù,äëïöü,âêîôû,ÁÉÍÓÚ,ÀÈÌÒÙ,ÄËÏÖÜ,ÂÊÎÔÛ".RemoveAccents());
+```  
+Result will be:
+```
+aeiou,aeiou,aeiou,aeiou,aeiou,aeiou,aeiou,aeiou
+```
+---
   
 ### News  
     
@@ -181,6 +194,7 @@ Smart, Utils
 - 0.0.8 Added *StringHelper.Join* helper method.
 - 0.0.9 Added *StringHelper.JoinWithoutNullOrEmpty* helper method.    
 - 0.0.10 Added *StringHelper.JoinWithoutNullOrEmptyOrWhiteSpace* helper method.  
+- 0.0.11 Added *StringHelper.RemoveAccents* helper method.  
   
 Danke  
   
