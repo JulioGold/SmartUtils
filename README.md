@@ -20,6 +20,7 @@ Methods
 - [StringHelper.JoinWithoutNullOrEmpty](#stringhelperjoinwithoutnullorempty)  
 - [StringHelper.JoinWithoutNullOrEmptyOrWhiteSpace](#stringhelperjoinwithoutnulloremptyorwhitespace)  
 - [StringHelper.RemoveAccents](#stringhelperremoveaccents)  
+- [IntHelper.IsPrime](#inthelperisprime)  
   
 ---  
 ### IntHelper.NTimes  
@@ -181,6 +182,22 @@ Result will be:
 aeiou,aeiou,aeiou,aeiou,aeiou,aeiou,aeiou,aeiou
 ```
 ---
+### IntHelper.IsPrime  
+
+Check if the passed number is prime numebr or not.   
+  
+```
+Console.WriteLine(7.IsPrime());
+Console.WriteLine(14.IsPrime());
+Console.WriteLine(19.IsPrime());
+```  
+Result will be:
+```
+True
+False
+True
+```
+---
   
 ### News  
     
@@ -195,6 +212,7 @@ aeiou,aeiou,aeiou,aeiou,aeiou,aeiou,aeiou,aeiou
 - 0.0.9 Added *StringHelper.JoinWithoutNullOrEmpty* helper method.    
 - 0.0.10 Added *StringHelper.JoinWithoutNullOrEmptyOrWhiteSpace* helper method.  
 - 0.0.11 Added *StringHelper.RemoveAccents* helper method.  
+- 0.0.12 Added *IntHelper.IsPrime* helper method.  
   
 Danke  
   

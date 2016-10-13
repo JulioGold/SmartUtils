@@ -147,6 +147,18 @@ namespace Run
 
             #endregion
 
+            #region IntHelper.IsPrime
+
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.WriteLine("<!------- IntHelper.IsPrime -------");
+            Console.WriteLine(7.IsPrime());
+            Console.WriteLine(14.IsPrime());
+            Console.WriteLine(19.IsPrime());
+            Console.WriteLine("------- IntHelper.IsPrime ------->");
+
+            #endregion
+
             Console.ReadKey();
         }
     }
