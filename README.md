@@ -21,6 +21,7 @@ Methods
 - [StringHelper.JoinWithoutNullOrEmptyOrWhiteSpace](#stringhelperjoinwithoutnulloremptyorwhitespace)  
 - [StringHelper.RemoveAccents](#stringhelperremoveaccents)  
 - [IntHelper.IsPrime](#inthelperisprime)  
+- [SmartUtils.CheckHasNull](#smartutilscheckhasnull)  
   
 ---  
 ### IntHelper.NTimes  
@@ -198,6 +199,32 @@ False
 True
 ```
 ---
+### SmartUtils.CheckHasNull  
+
+Check if the parameters list has a null.   
+  
+```
+Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(null, 1));
+Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(null, null));
+Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(1, "A"));
+Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(1, null));
+Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(new List<object> { null, 1 }));
+Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(new List<object> { null, null }));
+Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(new List<object> { 1, "A" }));
+Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(new List<object> { 1, null }));
+```  
+Result will be:
+```
+True
+True
+False
+True
+True
+True
+False
+True
+```
+---
   
 ### News  
     
@@ -213,6 +240,7 @@ True
 - 0.0.10 Added *StringHelper.JoinWithoutNullOrEmptyOrWhiteSpace* helper method.  
 - 0.0.11 Added *StringHelper.RemoveAccents* helper method.  
 - 0.0.12 Added *IntHelper.IsPrime* helper method.  
+- 0.0.13 Added *SmartUtils.CheckHasNull* helper method.  
   
 Danke  
   

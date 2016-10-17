@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SmartUtils;
 using System.IO;
 
@@ -156,6 +153,23 @@ namespace Run
             Console.WriteLine(14.IsPrime());
             Console.WriteLine(19.IsPrime());
             Console.WriteLine("------- IntHelper.IsPrime ------->");
+
+            #endregion
+
+            #region SmartUtils.CheckHasNull
+
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.WriteLine("<!------- SmartUtils.CheckHasNull -------");
+            Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(null, 1));
+            Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(null, null));
+            Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(1, "A"));
+            Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(1, null));
+            Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(new List<object> { null, 1 }));
+            Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(new List<object> { null, null }));
+            Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(new List<object> { 1, "A" }));
+            Console.WriteLine(SmartUtils.SmartUtils.CheckHasNull(new List<object> { 1, null }));
+            Console.WriteLine("------- SmartUtils.CheckHasNull ------->");
 
             #endregion
 
