@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SmartUtils\SmartUtils.csproj">
-      <Project>{3dcab98e-47a3-445b-88e4-227d15ec10dd}</Project>
+      <Project>{f4cf4a10-3f51-46bb-9d28-a1c224422bbf}</Project>
       <Name>SmartUtils</Name>
     </ProjectReference>
   </ItemGroup>
