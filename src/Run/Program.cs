@@ -173,6 +173,30 @@ namespace Run
 
             #endregion
 
+            #region StringHelper.BtoA
+
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.WriteLine("<!------- StringHelper.BtoA -------");
+
+            Console.WriteLine(StringHelper.BtoA("ABCDEFGHIJKLMNOPQRSTUVWXYZ"));
+
+            Console.WriteLine("------- StringHelper.BtoA ------->");
+
+            #endregion
+
+            #region StringHelper.AtoB
+
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.WriteLine("<!------- StringHelper.AtoB -------");
+
+            Console.WriteLine(StringHelper.AtoB("QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVo="));
+
+            Console.WriteLine("------- StringHelper.AtoB ------->");
+
+            #endregion
+
             Console.ReadKey();
         }
     }

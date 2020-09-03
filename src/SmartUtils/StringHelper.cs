@@ -73,5 +73,53 @@ namespace SmartUtils
 
             return inputString;
         }
+
+        /// <summary>
+        /// Method like a BTOA from javascript.
+        /// </summary>
+        /// <param name="regularText"></param>
+        /// <returns></returns>
+        public static string BtoA(string regularText)
+        {
+            Func<string, byte[]> GetBytes = (text) =>
+            {
+                int length = text.Length;
+
+                byte[] byteArr = new byte[length];
+
+                for (int i = 0; i < length; i++)
+                {
+                    byteArr[i] = (byte)text[i];
+                }
+
+                return byteArr;
+            };
+
+            return Convert.ToBase64String(GetBytes(regularText));
+        }
+
+        /// <summary>
+        /// Method like a ATOB from javascript.
+        /// </summary>
+        /// <param name="base64Encoded"></param>
+        /// <returns></returns>
+        public static string AtoB(string base64Encoded)
+        {
+            Func<byte[], string> GetString = (bytes) =>
+            {
+                int length = bytes.Length;
+
+                char[] charArr = new char[length];
+
+                for (int i = 0; i < length; i++)
+                {
+                    charArr[i] = (char)bytes[i];
+                }
+
+                return new string(charArr);
+            };
+
+            return GetString(System.Convert.FromBase64String(base64Encoded));
+        }
     }
 }
